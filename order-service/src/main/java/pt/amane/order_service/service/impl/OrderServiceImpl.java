@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
 
   private final OrderRepository orderRepository;
   private final WebClient.Builder webClientBuilder;
-//  private final ObservationRegistry observationRegistry;
+  //  private final ObservationRegistry observationRegistry;
   private final ApplicationEventPublisher applicationEventPublisher;
 
   @Override
@@ -46,34 +46,33 @@ public class OrderServiceImpl implements OrderService {
         .map(OrderLineItems::getSkuCode)
         .toList();
 
-
     // Call Inventory service, and place order if product is in stock
     InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
-              .uri("http://inventory-service/api/inventory",
-                  uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
-              .retrieve()
-              .bodyToMono(InventoryResponse[].class)
-              .block();
+        .uri("http://inventory-service/api/inventory",
+            uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
+        .retrieve()
+        .bodyToMono(InventoryResponse[].class)
+        .block();
 
-    boolean allProductsInStock = Arrays.stream(inventoryResponseArray).allMatch(InventoryResponse::isInStock);
+    boolean allProductsInStock = Arrays.stream(inventoryResponseArray)
+        .allMatch(InventoryResponse::isInStock);
 
-    if(allProductsInStock) {
+    if (allProductsInStock) {
       orderRepository.save(order);
-    }else {
+    } else {
       throw new IllegalArgumentException("Product is not in stock, please try again later");
     }
 //    Observation inventoryServiceObservation = Observation.createNotStarted("inventory-service-lookup", this.observationRegistry);
 
-
-    return "";
+    return inventoryResponseArray.toString();
   }
 
   private OrderLineItems mapToOrder(OrderLineItemsDto orderLineItemsDto) {
-     OrderLineItems orderLineItems = new OrderLineItems();
-     orderLineItems.setId(orderLineItemsDto.getId());
-     orderLineItems.setPrice(orderLineItemsDto.getPrice());
-     orderLineItems.setQuantity(orderLineItemsDto.getQuantity());
-     orderLineItems.setQuantity(orderLineItemsDto.getQuantity());
+    OrderLineItems orderLineItems = new OrderLineItems();
+    orderLineItems.setId(orderLineItemsDto.getId());
+    orderLineItems.setPrice(orderLineItemsDto.getPrice());
+    orderLineItems.setQuantity(orderLineItemsDto.getQuantity());
+    orderLineItems.setQuantity(orderLineItemsDto.getQuantity());
     orderLineItems.setSkuCode(orderLineItemsDto.getSkuCode());
 
     return orderLineItems;

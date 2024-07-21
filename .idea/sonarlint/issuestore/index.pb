@@ -67,3 +67,11 @@ Hapi-gateway/src/main/java/pt/amane/apigateway/ApiGatewayApplication.java,e\6\e
 0api-gateway/src/main/java/pt/apigateway/App.java,f\1\f148e78c629cd4ccae11c9123eb3b24397690df9
 r
 Bapi-gateway/src/main/java/pt/apigateway/ApiGatewayApplication.java,8\a\8a85a645ddafc48b079a6701cadb1f2a22a54721
+x
+Hapi-gateway/src/main/java/pt/amane/apigateway/config/SecurityConfig.java,5\b\5bf8908ed5b7fa2e3992361d071c15f0157c262d
+‚
+Rorder-service/src/main/java/pt/amane/order_service/controller/OrderController.java,d\a\da7b6ebef724294baa1264d4b50a74dc01ade36f
+|
+Lorder-service/src/main/java/pt/amane/order_service/service/OrderService.java,a\3\a3b7f4e8f7863fb2ccfb774cfa28c16de65976e8
+ƒ
+Sdiscovery-server/src/main/java/pt/amane/discovery_server/config/SecurityConfig.java,b\6\b63f0e7c964371c88ff913c325a714b4ee8560ca
