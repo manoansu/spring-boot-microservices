@@ -1,0 +1,12 @@
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\config\WebClientConfig.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\controller\definition\OrderDefinition.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\controller\OrderController.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\dto\InventoryResponse.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\dto\OrderLineItemsDto.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\dto\OrderRequest.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\model\Order.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\model\OrderLineItems.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\OrderServiceApplication.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\repository\OrderRepository.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\service\impl\OrderServiceImpl.java
+C:\Project\Bootcamp\courses\microservices-new\order-service\src\main\java\pt\amane\order_service\service\OrderService.java

@@ -1,0 +1,13 @@
+pt\amane\order_service\dto\OrderRequest.class
+pt\amane\order_service\model\Order.class
+pt\amane\order_service\controller\OrderController.class
+pt\amane\order_service\dto\InventoryResponse$InventoryResponseBuilder.class
+pt\amane\order_service\service\OrderService.class
+pt\amane\order_service\config\WebClientConfig.class
+pt\amane\order_service\controller\definition\OrderDefinition.class
+pt\amane\order_service\dto\OrderLineItemsDto.class
+pt\amane\order_service\repository\OrderRepository.class
+pt\amane\order_service\dto\InventoryResponse.class
+pt\amane\order_service\model\OrderLineItems.class
+pt\amane\order_service\service\impl\OrderServiceImpl.class
+pt\amane\order_service\OrderServiceApplication.class

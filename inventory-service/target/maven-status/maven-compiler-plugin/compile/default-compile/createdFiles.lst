@@ -1,0 +1,9 @@
+pt\amane\inventory_service\controller\definition\InventoryDefinition.class
+pt\amane\inventory_service\controller\InventoryController.class
+pt\amane\inventory_service\service\InventoryService.class
+pt\amane\inventory_service\dto\InventoryResponse.class
+pt\amane\inventory_service\InventoryServiceApplication.class
+pt\amane\inventory_service\dto\InventoryResponse$InventoryResponseBuilder.class
+pt\amane\inventory_service\model\Inventory.class
+pt\amane\inventory_service\repository\InventoryRepository.class
+pt\amane\inventory_service\service\impl\InventoryServiceImpl.class

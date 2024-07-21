@@ -1,0 +1,12 @@
+pt\amane\product_service\dto\ProductRequest$ProductRequestBuilder.class
+pt\amane\product_service\controller\ProductController.class
+pt\amane\product_service\ProductServiceApplication.class
+pt\amane\product_service\model\Product$ProductBuilder.class
+pt\amane\product_service\model\Product.class
+pt\amane\product_service\dto\ProductRequest.class
+pt\amane\product_service\service\ProductServiceImpl.class
+pt\amane\product_service\dto\ProductRsaponse$ProductRsaponseBuilder.class
+pt\amane\product_service\service\ProductService.class
+pt\amane\product_service\repository\ProductRepository.class
+pt\amane\product_service\controller\definition\ProductDefinition.class
+pt\amane\product_service\dto\ProductRsaponse.class
